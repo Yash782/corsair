@@ -4,6 +4,17 @@ import { NextResponse } from 'next/server';
 import { corsair } from '@/server/corsair';
 
 export async function POST(request: NextRequest) {
+	const url = new URL(request.url);
+	const validationToken = url.searchParams.get('validationtoken') || url.searchParams.get('validationToken');
+
+	if (validationToken) {
+		return new NextResponse(validationToken, {
+			status: 200,
+			headers: {
+				'Content-Type': 'text/plain; charset=utf-8',
+			},
+		});
+	}
 	const headers: Record<string, string> = {};
 	request.headers.forEach((value, key) => {
 		headers[key] = value;
@@ -20,8 +31,6 @@ export async function POST(request: NextRequest) {
 		body = text && text.trim() ? text : {};
 	}
 
-	const url = new URL(request.url);
-
 	const tenantId =
 		url.searchParams.get('tenantId') ||
 		url.searchParams.get('tenant_id') ||
@@ -33,7 +42,9 @@ export async function POST(request: NextRequest) {
 
 	// Build response headers (e.g. Asana X-Hook-Secret handshake)
 	// any/unknown cast needed since responseHeaders is a newer field not yet in the installed type definitions
-	const responseHeaders = (result as Record<string, unknown>).responseHeaders as Record<string, string> | undefined;
+	const responseHeaders = (result as Record<string, unknown>).responseHeaders as
+		| Record<string, string>
+		| undefined;
 	const nextHeaders = new Headers();
 	if (responseHeaders) {
 		for (const [key, value] of Object.entries(responseHeaders)) {

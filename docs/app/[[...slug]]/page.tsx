@@ -15,19 +15,72 @@ import ComparisonDoc from '@/content/getting-started/comparison.mdx';
 import InstallationDoc from '@/content/getting-started/installation.mdx';
 import IntroductionDoc from '@/content/getting-started/introduction.mdx';
 import QuickStartDoc from '@/content/getting-started/quick-start.mdx';
+// Guides
+import CreateYourOwnPlugin from '@/content/guides/create-your-own-plugin.mdx';
+import DashboardGuide from '@/content/guides/dashboard.mdx';
+import HatchetGuide from '@/content/guides/hatchet.mdx';
+import InngestGuide from '@/content/guides/inngest.mdx';
+import PluginCredentialsGuide from '@/content/guides/plugin-credentials.mdx';
+import TemporalGuide from '@/content/guides/temporal.mdx';
+import TriggerDevGuide from '@/content/guides/trigger-dev.mdx';
+import WebhooksGuide from '@/content/guides/webhooks.mdx';
+import WorkflowsGuide from '@/content/guides/workflows.mdx';
 // MCP Adapters
 import McpAnthropicSdkDoc from '@/content/mcp-adapters/anthropic-sdk.mdx';
 import McpClaudeSdkDoc from '@/content/mcp-adapters/claude-sdk.mdx';
 import McpMastraDoc from '@/content/mcp-adapters/mastra.mdx';
-import McpOpenAIAgentsDoc from '@/content/mcp-adapters/openai-agents.mdx';
 import McpOpenAIDoc from '@/content/mcp-adapters/openai.mdx';
+import McpOpenAIAgentsDoc from '@/content/mcp-adapters/openai-agents.mdx';
 import McpVercelAiDoc from '@/content/mcp-adapters/vercel-ai.mdx';
-// Guides
-import CreateYourOwnPlugin from '@/content/guides/create-your-own-plugin.mdx';
-import PluginCredentialsGuide from '@/content/guides/plugin-credentials.mdx';
-import DashboardGuide from '@/content/guides/dashboard.mdx';
-import WorkflowsGuide from '@/content/guides/workflows.mdx';
-import WebhooksGuide from '@/content/guides/webhooks.mdx';
+import McpClaudeCodeDoc from '@/content/mcp-adapters/claude-code.mdx';
+import McpCursorDoc from '@/content/mcp-adapters/cursor.mdx';
+import AhrefsDatabaseDoc from '@/content/plugins/ahrefs/database.mdx';
+import AhrefsGetCredentialsDoc from '@/content/plugins/ahrefs/get-credentials.mdx';
+import AhrefsDoc from '@/content/plugins/ahrefs/main.mdx';
+import AirtableApiEndpointsDoc from '@/content/plugins/airtable/api-endpoints.mdx';
+import AirtableDatabaseDoc from '@/content/plugins/airtable/database.mdx';
+import AirtableErrorHandlersDoc from '@/content/plugins/airtable/error-handlers.mdx';
+import AirtableDoc from '@/content/plugins/airtable/main.mdx';
+import AirtableWebhooksDoc from '@/content/plugins/airtable/webhooks.mdx';
+import AmplitudeApiEndpointsDoc from '@/content/plugins/amplitude/api-endpoints.mdx';
+import AmplitudeDatabaseDoc from '@/content/plugins/amplitude/database.mdx';
+import AmplitudeErrorHandlersDoc from '@/content/plugins/amplitude/error-handlers.mdx';
+import AmplitudeDoc from '@/content/plugins/amplitude/main.mdx';
+import AmplitudeWebhooksDoc from '@/content/plugins/amplitude/webhooks.mdx';
+import AsanaDatabaseDoc from '@/content/plugins/asana/database.mdx';
+import AsanaGetCredentialsDoc from '@/content/plugins/asana/get-credentials.mdx';
+import AsanaDoc from '@/content/plugins/asana/main.mdx';
+import BoxDatabaseDoc from '@/content/plugins/box/database.mdx';
+import BoxGetCredentialsDoc from '@/content/plugins/box/get-credentials.mdx';
+import BoxDoc from '@/content/plugins/box/main.mdx';
+import CalApiEndpointsDoc from '@/content/plugins/cal/api-endpoints.mdx';
+import CalDatabaseDoc from '@/content/plugins/cal/database.mdx';
+import CalErrorHandlersDoc from '@/content/plugins/cal/error-handlers.mdx';
+import CalDoc from '@/content/plugins/cal/main.mdx';
+import CalWebhooksDoc from '@/content/plugins/cal/webhooks.mdx';
+import CalendlyDatabaseDoc from '@/content/plugins/calendly/database.mdx';
+import CalendlyGetCredentialsDoc from '@/content/plugins/calendly/get-credentials.mdx';
+import CalendlyDoc from '@/content/plugins/calendly/main.mdx';
+import CursorDatabaseDoc from '@/content/plugins/cursor/database.mdx';
+import CursorGetCredentialsDoc from '@/content/plugins/cursor/get-credentials.mdx';
+import CursorDoc from '@/content/plugins/cursor/main.mdx';
+import DiscordApiEndpointsDoc from '@/content/plugins/discord/api-endpoints.mdx';
+import DiscordDatabaseDoc from '@/content/plugins/discord/database.mdx';
+import DiscordErrorHandlersDoc from '@/content/plugins/discord/error-handlers.mdx';
+import DiscordDoc from '@/content/plugins/discord/main.mdx';
+import DiscordWebhooksDoc from '@/content/plugins/discord/webhooks.mdx';
+import DropboxDatabaseDoc from '@/content/plugins/dropbox/database.mdx';
+import DropboxGetCredentialsDoc from '@/content/plugins/dropbox/get-credentials.mdx';
+import DropboxDoc from '@/content/plugins/dropbox/main.mdx';
+import ExaDatabaseDoc from '@/content/plugins/exa/database.mdx';
+import ExaGetCredentialsDoc from '@/content/plugins/exa/get-credentials.mdx';
+import ExaDoc from '@/content/plugins/exa/main.mdx';
+import FigmaDatabaseDoc from '@/content/plugins/figma/database.mdx';
+import FigmaGetCredentialsDoc from '@/content/plugins/figma/get-credentials.mdx';
+import FigmaDoc from '@/content/plugins/figma/main.mdx';
+import FirefliesDatabaseDoc from '@/content/plugins/fireflies/database.mdx';
+import FirefliesGetCredentialsDoc from '@/content/plugins/fireflies/get-credentials.mdx';
+import FirefliesDoc from '@/content/plugins/fireflies/main.mdx';
 import GithubApiEndpointsDoc from '@/content/plugins/github/api-endpoints.mdx';
 import GithubDatabaseDoc from '@/content/plugins/github/database.mdx';
 import GithubErrorHandlersDoc from '@/content/plugins/github/error-handlers.mdx';
@@ -58,18 +111,51 @@ import GoogleSheetsErrorHandlersDoc from '@/content/plugins/googlesheets/error-h
 import GoogleSheetsGetCredentialsDoc from '@/content/plugins/googlesheets/get-credentials.mdx';
 import GoogleSheetsDoc from '@/content/plugins/googlesheets/main.mdx';
 import GoogleSheetsWebhooksDoc from '@/content/plugins/googlesheets/webhooks.mdx';
+import HackerNewsDatabaseDoc from '@/content/plugins/hackernews/database.mdx';
+import HackerNewsGetCredentialsDoc from '@/content/plugins/hackernews/get-credentials.mdx';
+import HackerNewsDoc from '@/content/plugins/hackernews/main.mdx';
 import HubSpotApiEndpointsDoc from '@/content/plugins/hubspot/api-endpoints.mdx';
 import HubSpotDatabaseDoc from '@/content/plugins/hubspot/database.mdx';
 import HubSpotErrorHandlersDoc from '@/content/plugins/hubspot/error-handlers.mdx';
 import HubSpotGetCredentialsDoc from '@/content/plugins/hubspot/get-credentials.mdx';
 import HubSpotDoc from '@/content/plugins/hubspot/main.mdx';
 import HubSpotWebhooksDoc from '@/content/plugins/hubspot/webhooks.mdx';
+import IntercomDatabaseDoc from '@/content/plugins/intercom/database.mdx';
+import IntercomGetCredentialsDoc from '@/content/plugins/intercom/get-credentials.mdx';
+import IntercomDoc from '@/content/plugins/intercom/main.mdx';
+import JiraDatabaseDoc from '@/content/plugins/jira/database.mdx';
+import JiraGetCredentialsDoc from '@/content/plugins/jira/get-credentials.mdx';
+import JiraDoc from '@/content/plugins/jira/main.mdx';
 import LinearApiEndpointsDoc from '@/content/plugins/linear/api-endpoints.mdx';
 import LinearDatabaseDoc from '@/content/plugins/linear/database.mdx';
 import LinearErrorHandlersDoc from '@/content/plugins/linear/error-handlers.mdx';
 import LinearGetCredentialsDoc from '@/content/plugins/linear/get-credentials.mdx';
 import LinearDoc from '@/content/plugins/linear/main.mdx';
 import LinearWebhooksDoc from '@/content/plugins/linear/webhooks.mdx';
+import MondayDatabaseDoc from '@/content/plugins/monday/database.mdx';
+import MondayGetCredentialsDoc from '@/content/plugins/monday/get-credentials.mdx';
+import MondayDoc from '@/content/plugins/monday/main.mdx';
+import NotionApiEndpointsDoc from '@/content/plugins/notion/api-endpoints.mdx';
+import NotionDatabaseDoc from '@/content/plugins/notion/database.mdx';
+import NotionErrorHandlersDoc from '@/content/plugins/notion/error-handlers.mdx';
+import NotionDoc from '@/content/plugins/notion/main.mdx';
+import NotionWebhooksDoc from '@/content/plugins/notion/webhooks.mdx';
+import OnedriveDatabaseDoc from '@/content/plugins/onedrive/database.mdx';
+import OnedriveGetCredentialsDoc from '@/content/plugins/onedrive/get-credentials.mdx';
+import OnedriveDoc from '@/content/plugins/onedrive/main.mdx';
+import OuraApiEndpointsDoc from '@/content/plugins/oura/api-endpoints.mdx';
+import OuraDatabaseDoc from '@/content/plugins/oura/database.mdx';
+import OuraErrorHandlersDoc from '@/content/plugins/oura/error-handlers.mdx';
+import OuraDoc from '@/content/plugins/oura/main.mdx';
+import OuraWebhooksDoc from '@/content/plugins/oura/webhooks.mdx';
+import OutlookDatabaseDoc from '@/content/plugins/outlook/database.mdx';
+import OutlookGetCredentialsDoc from '@/content/plugins/outlook/get-credentials.mdx';
+import OutlookDoc from '@/content/plugins/outlook/main.mdx';
+import PagerDutyApiEndpointsDoc from '@/content/plugins/pagerduty/api-endpoints.mdx';
+import PagerDutyDatabaseDoc from '@/content/plugins/pagerduty/database.mdx';
+import PagerDutyErrorHandlersDoc from '@/content/plugins/pagerduty/error-handlers.mdx';
+import PagerDutyDoc from '@/content/plugins/pagerduty/main.mdx';
+import PagerDutyWebhooksDoc from '@/content/plugins/pagerduty/webhooks.mdx';
 import PostHogApiEndpointsDoc from '@/content/plugins/posthog/api-endpoints.mdx';
 import PostHogDatabaseDoc from '@/content/plugins/posthog/database.mdx';
 import PostHogErrorHandlersDoc from '@/content/plugins/posthog/error-handlers.mdx';
@@ -82,6 +168,11 @@ import ResendErrorHandlersDoc from '@/content/plugins/resend/error-handlers.mdx'
 import ResendGetCredentialsDoc from '@/content/plugins/resend/get-credentials.mdx';
 import ResendDoc from '@/content/plugins/resend/main.mdx';
 import ResendWebhooksDoc from '@/content/plugins/resend/webhooks.mdx';
+import SentryApiEndpointsDoc from '@/content/plugins/sentry/api-endpoints.mdx';
+import SentryDatabaseDoc from '@/content/plugins/sentry/database.mdx';
+import SentryErrorHandlersDoc from '@/content/plugins/sentry/error-handlers.mdx';
+import SentryDoc from '@/content/plugins/sentry/main.mdx';
+import SentryWebhooksDoc from '@/content/plugins/sentry/webhooks.mdx';
 import SlackApiEndpointsDoc from '@/content/plugins/slack/api-endpoints.mdx';
 import SlackDatabaseDoc from '@/content/plugins/slack/database.mdx';
 import SlackErrorHandlersDoc from '@/content/plugins/slack/error-handlers.mdx';
@@ -89,66 +180,47 @@ import SlackGetCredentialsDoc from '@/content/plugins/slack/get-credentials.mdx'
 // Plugins
 import SlackDoc from '@/content/plugins/slack/main.mdx';
 import SlackWebhooksDoc from '@/content/plugins/slack/webhooks.mdx';
-import DiscordDoc from '@/content/plugins/discord/main.mdx';
-import DiscordApiEndpointsDoc from '@/content/plugins/discord/api-endpoints.mdx';
-import DiscordWebhooksDoc from '@/content/plugins/discord/webhooks.mdx';
-import DiscordDatabaseDoc from '@/content/plugins/discord/database.mdx';
-import DiscordErrorHandlersDoc from '@/content/plugins/discord/error-handlers.mdx';
-import PagerDutyDoc from '@/content/plugins/pagerduty/main.mdx';
-import PagerDutyApiEndpointsDoc from '@/content/plugins/pagerduty/api-endpoints.mdx';
-import PagerDutyWebhooksDoc from '@/content/plugins/pagerduty/webhooks.mdx';
-import PagerDutyDatabaseDoc from '@/content/plugins/pagerduty/database.mdx';
-import PagerDutyErrorHandlersDoc from '@/content/plugins/pagerduty/error-handlers.mdx';
-import OuraDoc from '@/content/plugins/oura/main.mdx';
-import OuraApiEndpointsDoc from '@/content/plugins/oura/api-endpoints.mdx';
-import OuraWebhooksDoc from '@/content/plugins/oura/webhooks.mdx';
-import OuraDatabaseDoc from '@/content/plugins/oura/database.mdx';
-import OuraErrorHandlersDoc from '@/content/plugins/oura/error-handlers.mdx';
-import TavilyDoc from '@/content/plugins/tavily/main.mdx';
-import TavilyApiEndpointsDoc from '@/content/plugins/tavily/api-endpoints.mdx';
-import TavilyWebhooksDoc from '@/content/plugins/tavily/webhooks.mdx';
-import TavilyDatabaseDoc from '@/content/plugins/tavily/database.mdx';
-import TavilyErrorHandlersDoc from '@/content/plugins/tavily/error-handlers.mdx';
-import SpotifyDoc from '@/content/plugins/spotify/main.mdx';
 import SpotifyApiEndpointsDoc from '@/content/plugins/spotify/api-endpoints.mdx';
-import SpotifyWebhooksDoc from '@/content/plugins/spotify/webhooks.mdx';
 import SpotifyDatabaseDoc from '@/content/plugins/spotify/database.mdx';
 import SpotifyErrorHandlersDoc from '@/content/plugins/spotify/error-handlers.mdx';
-import AmplitudeDoc from '@/content/plugins/amplitude/main.mdx';
-import AmplitudeApiEndpointsDoc from '@/content/plugins/amplitude/api-endpoints.mdx';
-import AmplitudeWebhooksDoc from '@/content/plugins/amplitude/webhooks.mdx';
-import AmplitudeDatabaseDoc from '@/content/plugins/amplitude/database.mdx';
-import AmplitudeErrorHandlersDoc from '@/content/plugins/amplitude/error-handlers.mdx';
-import CalDoc from '@/content/plugins/cal/main.mdx';
-import CalApiEndpointsDoc from '@/content/plugins/cal/api-endpoints.mdx';
-import CalWebhooksDoc from '@/content/plugins/cal/webhooks.mdx';
-import CalDatabaseDoc from '@/content/plugins/cal/database.mdx';
-import CalErrorHandlersDoc from '@/content/plugins/cal/error-handlers.mdx';
-import NotionDoc from '@/content/plugins/notion/main.mdx';
-import NotionApiEndpointsDoc from '@/content/plugins/notion/api-endpoints.mdx';
-import NotionWebhooksDoc from '@/content/plugins/notion/webhooks.mdx';
-import NotionDatabaseDoc from '@/content/plugins/notion/database.mdx';
-import NotionErrorHandlersDoc from '@/content/plugins/notion/error-handlers.mdx';
-import AirtableDoc from '@/content/plugins/airtable/main.mdx';
-import AirtableApiEndpointsDoc from '@/content/plugins/airtable/api-endpoints.mdx';
-import AirtableWebhooksDoc from '@/content/plugins/airtable/webhooks.mdx';
-import AirtableDatabaseDoc from '@/content/plugins/airtable/database.mdx';
-import AirtableErrorHandlersDoc from '@/content/plugins/airtable/error-handlers.mdx';
-import TodoistDoc from '@/content/plugins/todoist/main.mdx';
+import SpotifyDoc from '@/content/plugins/spotify/main.mdx';
+import SpotifyWebhooksDoc from '@/content/plugins/spotify/webhooks.mdx';
+import StravaDatabaseDoc from '@/content/plugins/strava/database.mdx';
+import StravaGetCredentialsDoc from '@/content/plugins/strava/get-credentials.mdx';
+import StravaDoc from '@/content/plugins/strava/main.mdx';
+import StripeDatabaseDoc from '@/content/plugins/stripe/database.mdx';
+import StripeGetCredentialsDoc from '@/content/plugins/stripe/get-credentials.mdx';
+import StripeDoc from '@/content/plugins/stripe/main.mdx';
+import TavilyApiEndpointsDoc from '@/content/plugins/tavily/api-endpoints.mdx';
+import TavilyDatabaseDoc from '@/content/plugins/tavily/database.mdx';
+import TavilyErrorHandlersDoc from '@/content/plugins/tavily/error-handlers.mdx';
+import TavilyDoc from '@/content/plugins/tavily/main.mdx';
+import TavilyWebhooksDoc from '@/content/plugins/tavily/webhooks.mdx';
+import TelegramDatabaseDoc from '@/content/plugins/telegram/database.mdx';
+import TelegramGetCredentialsDoc from '@/content/plugins/telegram/get-credentials.mdx';
+import TelegramDoc from '@/content/plugins/telegram/main.mdx';
 import TodoistApiEndpointsDoc from '@/content/plugins/todoist/api-endpoints.mdx';
-import TodoistWebhooksDoc from '@/content/plugins/todoist/webhooks.mdx';
 import TodoistDatabaseDoc from '@/content/plugins/todoist/database.mdx';
 import TodoistErrorHandlersDoc from '@/content/plugins/todoist/error-handlers.mdx';
-import TwitterApiIODoc from '@/content/plugins/twitterapiio/main.mdx';
+import TodoistDoc from '@/content/plugins/todoist/main.mdx';
+import TodoistWebhooksDoc from '@/content/plugins/todoist/webhooks.mdx';
+import TrelloDatabaseDoc from '@/content/plugins/trello/database.mdx';
+import TrelloGetCredentialsDoc from '@/content/plugins/trello/get-credentials.mdx';
+import TrelloDoc from '@/content/plugins/trello/main.mdx';
+import TwitterDatabaseDoc from '@/content/plugins/twitter/database.mdx';
+import TwitterGetCredentialsDoc from '@/content/plugins/twitter/get-credentials.mdx';
+import TwitterDoc from '@/content/plugins/twitter/main.mdx';
 import TwitterApiIOApiEndpointsDoc from '@/content/plugins/twitterapiio/api-endpoints.mdx';
-import TwitterApiIOWebhooksDoc from '@/content/plugins/twitterapiio/webhooks.mdx';
 import TwitterApiIODatabaseDoc from '@/content/plugins/twitterapiio/database.mdx';
 import TwitterApiIOErrorHandlersDoc from '@/content/plugins/twitterapiio/error-handlers.mdx';
-import SentryDoc from '@/content/plugins/sentry/main.mdx';
-import SentryApiEndpointsDoc from '@/content/plugins/sentry/api-endpoints.mdx';
-import SentryWebhooksDoc from '@/content/plugins/sentry/webhooks.mdx';
-import SentryDatabaseDoc from '@/content/plugins/sentry/database.mdx';
-import SentryErrorHandlersDoc from '@/content/plugins/sentry/error-handlers.mdx';
+import TwitterApiIODoc from '@/content/plugins/twitterapiio/main.mdx';
+import TwitterApiIOWebhooksDoc from '@/content/plugins/twitterapiio/webhooks.mdx';
+import TypeformDatabaseDoc from '@/content/plugins/typeform/database.mdx';
+import TypeformGetCredentialsDoc from '@/content/plugins/typeform/get-credentials.mdx';
+import TypeformDoc from '@/content/plugins/typeform/main.mdx';
+import ZoomDatabaseDoc from '@/content/plugins/zoom/database.mdx';
+import ZoomGetCredentialsDoc from '@/content/plugins/zoom/get-credentials.mdx';
+import ZoomDoc from '@/content/plugins/zoom/main.mdx';
 import { extractTOC } from '@/lib/toc';
 import { useMDXComponents } from '@/mdx-components';
 
@@ -160,8 +232,7 @@ const pages = {
 	index: {
 		Component: IntroductionDoc,
 		title: 'Introduction',
-		description:
-			'The Integration Layer for AI Agents',
+		description: 'The Integration Layer for AI Agents',
 	},
 	'quick-start': {
 		Component: QuickStartDoc,
@@ -171,7 +242,8 @@ const pages = {
 	installation: {
 		Component: InstallationDoc,
 		title: 'Installation',
-		description: 'Install Corsair, migrate your database, and run your first prompt',
+		description:
+			'Install Corsair, migrate your database, and run your first prompt',
 	},
 	comparison: {
 		Component: ComparisonDoc,
@@ -207,6 +279,16 @@ const pages = {
 		Component: McpMastraDoc,
 		title: 'Mastra',
 		description: 'Connect Corsair to the Mastra agent framework',
+	},
+	'mcp-adapters/claude-code': {
+		Component: McpClaudeCodeDoc,
+		title: 'Claude Code',
+		description: 'Connect Corsair to Claude Code as a stdio MCP server',
+	},
+	'mcp-adapters/cursor': {
+		Component: McpCursorDoc,
+		title: 'Cursor',
+		description: 'Connect Corsair to Cursor as a stdio MCP server',
 	},
 	api: {
 		Component: ApiDoc,
@@ -561,7 +643,8 @@ const pages = {
 	'plugins/discord': {
 		Component: DiscordDoc,
 		title: 'Discord',
-		description: 'Integrate Discord messages, threads, reactions, and interactions',
+		description:
+			'Integrate Discord messages, threads, reactions, and interactions',
 	},
 	'plugins/discord/api-endpoints': {
 		Component: DiscordApiEndpointsDoc,
@@ -586,7 +669,8 @@ const pages = {
 	'plugins/pagerduty': {
 		Component: PagerDutyDoc,
 		title: 'PagerDuty',
-		description: 'Integrate PagerDuty incidents, alerts, and on-call management',
+		description:
+			'Integrate PagerDuty incidents, alerts, and on-call management',
 	},
 	'plugins/pagerduty/api-endpoints': {
 		Component: PagerDutyApiEndpointsDoc,
@@ -786,7 +870,8 @@ const pages = {
 	'plugins/todoist': {
 		Component: TodoistDoc,
 		title: 'Todoist',
-		description: 'Integrate Todoist tasks, projects, and productivity workflows',
+		description:
+			'Integrate Todoist tasks, projects, and productivity workflows',
 	},
 	'plugins/todoist/api-endpoints': {
 		Component: TodoistApiEndpointsDoc,
@@ -811,7 +896,8 @@ const pages = {
 	'plugins/twitterapiio': {
 		Component: TwitterApiIODoc,
 		title: 'Twitter API IO',
-		description: 'Integrate Twitter via twitterapi.io for tweets, users, and communities',
+		description:
+			'Integrate Twitter via twitterapi.io for tweets, users, and communities',
 	},
 	'plugins/twitterapiio/api-endpoints': {
 		Component: TwitterApiIOApiEndpointsDoc,
@@ -858,6 +944,340 @@ const pages = {
 		title: 'Sentry Error Handlers',
 		description: 'Built-in and custom error handling for Sentry',
 	},
+	'plugins/twitter': {
+		Component: TwitterDoc,
+		title: 'Twitter',
+		description: 'Manage Twitter tweets, users, and timelines',
+	},
+	'plugins/twitter/get-credentials': {
+		Component: TwitterGetCredentialsDoc,
+		title: 'Get Credentials',
+		description: 'Step-by-step instructions for obtaining Twitter credentials',
+	},
+	'plugins/twitter/database': {
+		Component: TwitterDatabaseDoc,
+		title: 'Twitter Database Schema',
+		description: 'Database entities and querying synced Twitter data',
+	},
+	'plugins/monday': {
+		Component: MondayDoc,
+		title: 'Monday',
+		description: 'Manage Monday.com boards, items, groups, and updates',
+	},
+	'plugins/monday/get-credentials': {
+		Component: MondayGetCredentialsDoc,
+		title: 'Get Credentials',
+		description:
+			'Step-by-step instructions for obtaining Monday.com credentials',
+	},
+	'plugins/monday/database': {
+		Component: MondayDatabaseDoc,
+		title: 'Monday Database Schema',
+		description: 'Database entities and querying synced Monday.com data',
+	},
+	'plugins/hackernews': {
+		Component: HackerNewsDoc,
+		title: 'Hacker News',
+		description: 'Access Hacker News stories, comments, and user data',
+	},
+	'plugins/hackernews/get-credentials': {
+		Component: HackerNewsGetCredentialsDoc,
+		title: 'Get Credentials',
+		description: 'Hacker News is a public API — no credentials required',
+	},
+	'plugins/hackernews/database': {
+		Component: HackerNewsDatabaseDoc,
+		title: 'Hacker News Database Schema',
+		description: 'Database entities and querying synced Hacker News data',
+	},
+	'plugins/box': {
+		Component: BoxDoc,
+		title: 'Box',
+		description: 'Manage Box files, folders, and collaborations',
+	},
+	'plugins/box/get-credentials': {
+		Component: BoxGetCredentialsDoc,
+		title: 'Get Credentials',
+		description: 'Step-by-step instructions for obtaining Box credentials',
+	},
+	'plugins/box/database': {
+		Component: BoxDatabaseDoc,
+		title: 'Box Database Schema',
+		description: 'Database entities and querying synced Box data',
+	},
+	'plugins/exa': {
+		Component: ExaDoc,
+		title: 'Exa',
+		description: 'AI-powered web search, content extraction, and websets',
+	},
+	'plugins/exa/get-credentials': {
+		Component: ExaGetCredentialsDoc,
+		title: 'Get Credentials',
+		description: 'Step-by-step instructions for obtaining Exa credentials',
+	},
+	'plugins/exa/database': {
+		Component: ExaDatabaseDoc,
+		title: 'Exa Database Schema',
+		description: 'Database entities and querying synced Exa data',
+	},
+	'plugins/intercom': {
+		Component: IntercomDoc,
+		title: 'Intercom',
+		description: 'Manage Intercom contacts, conversations, and companies',
+	},
+	'plugins/intercom/get-credentials': {
+		Component: IntercomGetCredentialsDoc,
+		title: 'Get Credentials',
+		description: 'Step-by-step instructions for obtaining Intercom credentials',
+	},
+	'plugins/intercom/database': {
+		Component: IntercomDatabaseDoc,
+		title: 'Intercom Database Schema',
+		description: 'Database entities and querying synced Intercom data',
+	},
+	'plugins/typeform': {
+		Component: TypeformDoc,
+		title: 'Typeform',
+		description: 'Manage Typeform forms, responses, and workspaces',
+	},
+	'plugins/typeform/get-credentials': {
+		Component: TypeformGetCredentialsDoc,
+		title: 'Get Credentials',
+		description: 'Step-by-step instructions for obtaining Typeform credentials',
+	},
+	'plugins/typeform/database': {
+		Component: TypeformDatabaseDoc,
+		title: 'Typeform Database Schema',
+		description: 'Database entities and querying synced Typeform data',
+	},
+	'plugins/fireflies': {
+		Component: FirefliesDoc,
+		title: 'Fireflies',
+		description: 'Access Fireflies meeting transcripts and summaries',
+	},
+	'plugins/fireflies/get-credentials': {
+		Component: FirefliesGetCredentialsDoc,
+		title: 'Get Credentials',
+		description:
+			'Step-by-step instructions for obtaining Fireflies credentials',
+	},
+	'plugins/fireflies/database': {
+		Component: FirefliesDatabaseDoc,
+		title: 'Fireflies Database Schema',
+		description: 'Database entities and querying synced Fireflies data',
+	},
+	'plugins/jira': {
+		Component: JiraDoc,
+		title: 'Jira',
+		description: 'Manage Jira issues, projects, sprints, and comments',
+	},
+	'plugins/jira/get-credentials': {
+		Component: JiraGetCredentialsDoc,
+		title: 'Get Credentials',
+		description: 'Step-by-step instructions for obtaining Jira credentials',
+	},
+	'plugins/jira/database': {
+		Component: JiraDatabaseDoc,
+		title: 'Jira Database Schema',
+		description: 'Database entities and querying synced Jira data',
+	},
+	'plugins/figma': {
+		Component: FigmaDoc,
+		title: 'Figma',
+		description: 'Manage Figma files, comments, components, and variables',
+	},
+	'plugins/figma/get-credentials': {
+		Component: FigmaGetCredentialsDoc,
+		title: 'Get Credentials',
+		description: 'Step-by-step instructions for obtaining Figma credentials',
+	},
+	'plugins/figma/database': {
+		Component: FigmaDatabaseDoc,
+		title: 'Figma Database Schema',
+		description: 'Database entities and querying synced Figma data',
+	},
+	'plugins/telegram': {
+		Component: TelegramDoc,
+		title: 'Telegram',
+		description: 'Send messages and manage Telegram bot interactions',
+	},
+	'plugins/telegram/get-credentials': {
+		Component: TelegramGetCredentialsDoc,
+		title: 'Get Credentials',
+		description:
+			'Step-by-step instructions for obtaining Telegram bot credentials',
+	},
+	'plugins/telegram/database': {
+		Component: TelegramDatabaseDoc,
+		title: 'Telegram Database Schema',
+		description: 'Database entities and querying synced Telegram data',
+	},
+	'plugins/zoom': {
+		Component: ZoomDoc,
+		title: 'Zoom',
+		description: 'Manage Zoom meetings, recordings, and webinars',
+	},
+	'plugins/zoom/get-credentials': {
+		Component: ZoomGetCredentialsDoc,
+		title: 'Get Credentials',
+		description: 'Step-by-step instructions for obtaining Zoom credentials',
+	},
+	'plugins/zoom/database': {
+		Component: ZoomDatabaseDoc,
+		title: 'Zoom Database Schema',
+		description: 'Database entities and querying synced Zoom data',
+	},
+	'plugins/dropbox': {
+		Component: DropboxDoc,
+		title: 'Dropbox',
+		description: 'Manage Dropbox files, folders, and file search',
+	},
+	'plugins/dropbox/get-credentials': {
+		Component: DropboxGetCredentialsDoc,
+		title: 'Get Credentials',
+		description: 'Step-by-step instructions for obtaining Dropbox credentials',
+	},
+	'plugins/dropbox/database': {
+		Component: DropboxDatabaseDoc,
+		title: 'Dropbox Database Schema',
+		description: 'Database entities and querying synced Dropbox data',
+	},
+	'plugins/trello': {
+		Component: TrelloDoc,
+		title: 'Trello',
+		description: 'Manage Trello boards, lists, cards, and checklists',
+	},
+	'plugins/trello/get-credentials': {
+		Component: TrelloGetCredentialsDoc,
+		title: 'Get Credentials',
+		description: 'Step-by-step instructions for obtaining Trello credentials',
+	},
+	'plugins/trello/database': {
+		Component: TrelloDatabaseDoc,
+		title: 'Trello Database Schema',
+		description: 'Database entities and querying synced Trello data',
+	},
+	'plugins/calendly': {
+		Component: CalendlyDoc,
+		title: 'Calendly',
+		description: 'Manage Calendly events, event types, and invitees',
+	},
+	'plugins/calendly/get-credentials': {
+		Component: CalendlyGetCredentialsDoc,
+		title: 'Get Credentials',
+		description: 'Step-by-step instructions for obtaining Calendly credentials',
+	},
+	'plugins/calendly/database': {
+		Component: CalendlyDatabaseDoc,
+		title: 'Calendly Database Schema',
+		description: 'Database entities and querying synced Calendly data',
+	},
+	'plugins/asana': {
+		Component: AsanaDoc,
+		title: 'Asana',
+		description: 'Manage Asana tasks, projects, sections, and teams',
+	},
+	'plugins/asana/get-credentials': {
+		Component: AsanaGetCredentialsDoc,
+		title: 'Get Credentials',
+		description: 'Step-by-step instructions for obtaining Asana credentials',
+	},
+	'plugins/asana/database': {
+		Component: AsanaDatabaseDoc,
+		title: 'Asana Database Schema',
+		description: 'Database entities and querying synced Asana data',
+	},
+	'plugins/stripe': {
+		Component: StripeDoc,
+		title: 'Stripe',
+		description:
+			'Manage Stripe payments, customers, charges, and subscriptions',
+	},
+	'plugins/stripe/get-credentials': {
+		Component: StripeGetCredentialsDoc,
+		title: 'Get Credentials',
+		description: 'Step-by-step instructions for obtaining Stripe credentials',
+	},
+	'plugins/stripe/database': {
+		Component: StripeDatabaseDoc,
+		title: 'Stripe Database Schema',
+		description: 'Database entities and querying synced Stripe data',
+	},
+	'plugins/ahrefs': {
+		Component: AhrefsDoc,
+		title: 'Ahrefs',
+		description: 'Access Ahrefs SEO data, backlinks, and keyword rankings',
+	},
+	'plugins/ahrefs/get-credentials': {
+		Component: AhrefsGetCredentialsDoc,
+		title: 'Get Credentials',
+		description: 'Step-by-step instructions for obtaining Ahrefs credentials',
+	},
+	'plugins/ahrefs/database': {
+		Component: AhrefsDatabaseDoc,
+		title: 'Ahrefs Database Schema',
+		description: 'Database entities and querying synced Ahrefs data',
+	},
+	'plugins/cursor': {
+		Component: CursorDoc,
+		title: 'Cursor',
+		description: 'Access Cursor AI agent data, models, and repositories',
+	},
+	'plugins/cursor/get-credentials': {
+		Component: CursorGetCredentialsDoc,
+		title: 'Get Credentials',
+		description: 'Step-by-step instructions for obtaining Cursor credentials',
+	},
+	'plugins/cursor/database': {
+		Component: CursorDatabaseDoc,
+		title: 'Cursor Database Schema',
+		description: 'Database entities and querying synced Cursor data',
+	},
+	'plugins/onedrive': {
+		Component: OnedriveDoc,
+		title: 'OneDrive',
+		description: 'Manage OneDrive files, folders, permissions, and SharePoint',
+	},
+	'plugins/onedrive/get-credentials': {
+		Component: OnedriveGetCredentialsDoc,
+		title: 'Get Credentials',
+		description: 'Step-by-step instructions for obtaining OneDrive credentials',
+	},
+	'plugins/onedrive/database': {
+		Component: OnedriveDatabaseDoc,
+		title: 'OneDrive Database Schema',
+		description: 'Database entities and querying synced OneDrive data',
+	},
+	'plugins/outlook': {
+		Component: OutlookDoc,
+		title: 'Outlook',
+		description: 'Manage Outlook messages, calendars, contacts, and folders',
+	},
+	'plugins/outlook/get-credentials': {
+		Component: OutlookGetCredentialsDoc,
+		title: 'Get Credentials',
+		description: 'Step-by-step instructions for obtaining Outlook credentials',
+	},
+	'plugins/outlook/database': {
+		Component: OutlookDatabaseDoc,
+		title: 'Outlook Database Schema',
+		description: 'Database entities and querying synced Outlook data',
+	},
+	'plugins/strava': {
+		Component: StravaDoc,
+		title: 'Strava',
+		description: 'Access Strava activities, athlete data, segments, and routes',
+	},
+	'plugins/strava/get-credentials': {
+		Component: StravaGetCredentialsDoc,
+		title: 'Get Credentials',
+		description: 'Step-by-step instructions for obtaining Strava credentials',
+	},
+	'plugins/strava/database': {
+		Component: StravaDatabaseDoc,
+		title: 'Strava Database Schema',
+		description: 'Database entities and querying synced Strava data',
+	},
 	'guides/create-your-own-plugin': {
 		Component: CreateYourOwnPlugin,
 		title: 'Create Your Own Plugin',
@@ -872,17 +1292,39 @@ const pages = {
 	'guides/dashboard': {
 		Component: DashboardGuide,
 		title: 'Vibe Code Your Dashboard',
-		description: 'Scaffold a Next.js + tRPC + SQLite project and build a live GitHub dashboard',
+		description:
+			'Scaffold a Next.js + tRPC + SQLite project and build a live GitHub dashboard',
 	},
 	'guides/workflows': {
 		Component: WorkflowsGuide,
 		title: 'Workflows',
-		description: 'Chain webhook events into multi-step automations across any plugin',
+		description:
+			'Chain webhook events into multi-step automations across any plugin',
 	},
 	'guides/webhooks': {
 		Component: WebhooksGuide,
 		title: 'Webhooks',
 		description: 'Handling webhooks in Corsair',
+	},
+	'guides/inngest': {
+		Component: InngestGuide,
+		title: 'Inngest',
+		description: 'Trigger durable Inngest functions from Corsair webhook events.',
+	},
+	'guides/temporal': {
+		Component: TemporalGuide,
+		title: 'Temporal',
+		description: 'Start Temporal workflows from Corsair webhook events.',
+	},
+	'guides/trigger-dev': {
+		Component: TriggerDevGuide,
+		title: 'Trigger.dev',
+		description: 'Run Trigger.dev background tasks from Corsair webhook events.',
+	},
+	'guides/hatchet': {
+		Component: HatchetGuide,
+		title: 'Hatchet',
+		description: 'Push Hatchet workflow events from Corsair webhook hooks.',
 	},
 } as const;
 
